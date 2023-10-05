@@ -3,15 +3,16 @@ package funcionario;
 import pessoa.Pessoa;
 
 public class Funcionario extends Pessoa {
-    private String tamanhoUniforme;
+    private char tamanhoUniforme;
     private Integer numeroCartaoDeAcesso;
-    private double salario;
+    private String horarioDeChegada;
+    private String horarioDeSaida;
     protected Funcionario(){
     }
-    public String getTamanhoUniforme() {
+    public char getTamanhoUniforme() {
         return tamanhoUniforme;
     }
-    public void setTamanhoUniforme(String tamanhoUniforme) {
+    public void setTamanhoUniforme(char tamanhoUniforme) {
         this.tamanhoUniforme = tamanhoUniforme;
     }
     public Integer getNumeroCartaoDeAcesso() {
@@ -20,14 +21,20 @@ public class Funcionario extends Pessoa {
     public void setNumeroCartaoDeAcesso(Integer numeroCartaoDeAcesso) {
         this.numeroCartaoDeAcesso = numeroCartaoDeAcesso;
     }
-    private double getSalario(){
-        return salario;
+    public String getHorarioDeChegada() {
+        return horarioDeChegada;
     }
-    public void setSalario(double salario){
-        this.salario = salario;
+    public void setHorarioDeChegada(String horarioDeChegada) {
+        this.horarioDeChegada = horarioDeChegada;
     }
-    public void horarioDeChegada(){
+    public String getHorarioDeSaida() {
+        return horarioDeSaida;
     }
-    public void horarioDeSaida(){
+    public void setHorarioDeSaida(String horarioDeSaida) {
+        this.horarioDeSaida = horarioDeSaida;
+    }
+    public void baterCartaoPontoEntrada(){
+    }
+    public void baterCartaoPontoSaida(){
     }
 }
