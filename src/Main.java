@@ -2,6 +2,7 @@ import cliente.Cliente;
 import funcionario.Padeiro;
 public class Main {
     public static void main(String[] args) {
+        System.out.println("-----PADARIA BOM PÃO-----");
         //Instanciando classe padaria
         Padaria padariaBomPao = new Padaria();
         //Definindo horario de abertura e encerramento
@@ -10,7 +11,7 @@ public class Main {
         System.out.println("Horario de abertura - "+padariaBomPao.getHorarioDeAbertura());
         System.out.println("Horario de encerramento - "+padariaBomPao.getHorarioDeFechar());
 
-        //Instanciando classe Padeiro
+        //Instanciando a classe Padeiro
         Padeiro padeiroFrancisco = new Padeiro();
         padeiroFrancisco.setNome("Francisco");
         padeiroFrancisco.setIdade(47);
@@ -25,6 +26,7 @@ public class Main {
                 " e o numero do seu cartao de acesso é: "+padeiroFrancisco.getNumeroCartaoDeAcesso()+
                 ". \nSeu horario de trabalho é das "+padeiroFrancisco.getHorarioDeChegada()+
                 " e horario de saida as "+padeiroFrancisco.getHorarioDeSaida());
+        padeiroFrancisco.etapasPrepararPao();
 
 
 
