@@ -2,12 +2,21 @@ package funcionario;
 
 public class Gerente extends Funcionario{
     public Gerente(){}
-    @Override
-    public void baterCartaoPontoEntrada() {
-        System.out.println("Horario de chegada "+getHorarioDeChegada());
+
+    private void conferindoEstoqueParaPaes(){
+        System.out.println("Conferindo estoque de todos os produtos para fazer pão.");
     }
-    @Override
-    public void baterCartaoPontoSaida() {
-        System.out.println("Horario de saida "+getHorarioDeSaida());
+    private void conferindoEstoqueDeBebidas(){
+        System.out.println("Conferindo estoque de todas as bebidas.");
+    }
+    private void conferindoEstoqueDeDoces(){
+        System.out.println("Conferindo estoque de todos os produtos da confeitaria.");
+    }
+    public void conferindoEstoque(){
+        System.out.println("Conferindo estoque de todos os produtos.");
+        conferindoEstoqueParaPaes();
+        conferindoEstoqueDeDoces();
+        conferindoEstoqueDeBebidas();
+        System.out.println("Tudo ok!");
     }
 }

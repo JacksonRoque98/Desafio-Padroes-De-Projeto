@@ -33,8 +33,4 @@ public class Funcionario extends Pessoa {
     public void setHorarioDeSaida(String horarioDeSaida) {
         this.horarioDeSaida = horarioDeSaida;
     }
-    public void baterCartaoPontoEntrada(){
-    }
-    public void baterCartaoPontoSaida(){
-    }
 }
